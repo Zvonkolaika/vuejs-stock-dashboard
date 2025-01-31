@@ -1,13 +1,17 @@
-<template>
-   <div id="app">
-  </div>
+<template>    
+<BaseCard>
+      <h1>Title 1</h1>
+      <p>Content for the first card.</p>
+    </BaseCard>
 </template>
 
 <script>
+import BaseCard from './components/BaseCard.vue';
 
 export default {
   name: 'App',
   components: {
+    BaseCard
   }
 }
 </script>
@@ -15,13 +19,17 @@ export default {
 <style>
 body{
   margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+ 
+ 
 }
 #app {
+  padding: 100px;
   width: 100vw;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
   background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011F35 100%);
+  box-sizing: border-box;
+ 
 
 }
 </style>
